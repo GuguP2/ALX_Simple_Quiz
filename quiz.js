@@ -7,7 +7,9 @@ function checkAnswer() {
     if (userAnswer == correctAnswer){
       feedback.textContent = "Correct! Well done.";
     } else {
+      if(userAnswer != correctAnswer){
      feedback.textContent = "That's incorrect. Try again!";
+     }
     }
     document.getElementById("submit-answer").addEventListener('onclick', checkAnswer =>{
 
