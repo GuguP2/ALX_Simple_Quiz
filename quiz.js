@@ -3,7 +3,10 @@ function checkAnswer() {
     document.querySelector(`"name="quiz"`);
 
     const userAnswer = document.querySelector(`"name="quiz"`).value;
+    
+ document.getElementById("submit-answer").addEventListener('onclick', checkAnswer =>{
 
+    });
     if (userAnswer == correctAnswer){
       feedback.textContent = "Correct! Well done.";
     } else {
@@ -11,7 +14,5 @@ function checkAnswer() {
      feedback.textContent = "That's incorrect. Try again!";
      }
     }
-    document.getElementById("submit-answer").addEventListener('onclick', checkAnswer =>{
-
-    });
+   
 }
